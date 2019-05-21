@@ -31,7 +31,9 @@
 </head>
 <body>
 <form action="rec.php" method="post">
-    <input type="text" name="Order_number" placeholder="Заказ" size="30"><br/>
+    <label>
+        <input type="text" name="Order_number" placeholder="Заказ" size="30">
+    </label><br/>
     <br/>
     <button class="button1">Не успеваю</button>
 
