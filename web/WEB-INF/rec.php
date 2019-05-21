@@ -1,13 +1,13 @@
-
-<html lang="ru">
+<html lang="java">
 <head>
     <META HTTP-EQUIV='Refresh' CONTENT='1,URL=index.jsp'>
-    <title>rec</title>
+    <title>SQL</title>
 </head>
 <body>
+
 <?php
-include 'connect.php';
-$Order_number = trim($_REQUEST['Order_number']);
+include $_SERVER['DOCUMENT_ROOT']. "/web/WEB-INF/connect.php";
+$Order_number = trim($_REQUEST['Order_button']);
 $insert_sql = "INSERT INTO tutorial.order_number (Order_number)" . // Указывает в какую таблицу и в какие поля ...
     "VALUES('{$Order_number}');"; // ...записывать данные
 

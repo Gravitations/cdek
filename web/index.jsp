@@ -32,7 +32,7 @@
 <body>
 <form action="rec.php" method="post">
     <label>
-        <input type="text" name="Order_number" placeholder="Заказ" size="30">
+        <input type="text" name="Order_button" placeholder="Заказ" size="30">
     </label><br/>
     <br/>
     <button class="button1">Не успеваю</button>
