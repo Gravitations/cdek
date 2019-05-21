@@ -27,6 +27,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>cdekTest</title>
+
 </head>
 <body>
 <form action="rec.php" method="post">
