@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cdek:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/cdek_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cdek/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="cdek/web/Web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
