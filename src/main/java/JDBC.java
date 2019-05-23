@@ -12,7 +12,7 @@ public class JDBC {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
             System.out.println("Соединение успешно!");
-            Connection connection= DriverManager.getConnection(url, username, password);
+            Connection connection = DriverManager.getConnection(url, username, password);
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from tutorial.order_number");
             while (resultSet.next()){
