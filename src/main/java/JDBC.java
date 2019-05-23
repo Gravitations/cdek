@@ -1,6 +1,7 @@
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 
+
 public class JDBC {
     private static final String url = "jdbc:mysql://localhost:3306/tutorial?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false";
     private static final String username = "root";
@@ -15,9 +16,10 @@ public class JDBC {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from tutorial.order_number");
             while (resultSet.next()){
-                System.out.println(resultSet.getString(1));
+                System.out.print(resultSet.getString(1)+" ");
+                System.out.println(resultSet.getString(2));
             }
-resultSet.close();
+            resultSet.close();
             statement.close();
             connection.close();
         } catch (SQLException e){

@@ -12,6 +12,7 @@ $DB_NAME="tutorial";
 $DB_PORT="8080"; /// Порт базы
 $con = mysqli_connect($DB_SERVER, $DB_USER_READER, $DB_PASS_READER, $DB_NAME, $DB_PORT);
 mysqli_set_charset($con, 'utf8');
+echo 'test';
 if (!$con) {
     echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
     exit;
