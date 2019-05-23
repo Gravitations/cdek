@@ -16,8 +16,7 @@ public class JDBC {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from tutorial.order_number");
             while (resultSet.next()){
-                System.out.print(resultSet.getString(1)+" ");
-                System.out.println(resultSet.getString(2));
+                System.out.println(resultSet.getString(1)+" "+(resultSet.getString(2)));
             }
             resultSet.close();
             statement.close();
